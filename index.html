@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minyak Asmoro Asihan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            /* background: #333; */
+            color: #0b0b0b;
+            text-align: center;
+            padding: 10px 30px;
+        }
+        /* header h1 {
+            margin: 0;
+            font-size: 24px;
+        } */
+        header p {
+            font-size: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .content h2 {
+            text-align: center;
+            font-size: 20px;
+            color: #444;
+        }
+        .content p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta a:hover {
+            background: #218838;
+        }
+        .cta a span {
+            display: inline-block;
+            margin-right: 10px;
+            transform: translateX(0);
+            transition: transform 0.3s;
+        }
+        .cta a:hover span {
+            transform: translateX(5px);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            height: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+<script>
+  let currentSlide = 0;
+
+  function showSlide(index) {
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+      currentSlide = (index + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function startSlider() {
+      setInterval(() => {
+          showSlide(currentSlide + 1);
+      }, 3000);
+  }
+
+  window.onload = startSlider;
+</script>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Minyak Asmoro Asihan</h1>
+        <p>Abah Mundhir Hidayat</p>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="img/gambar (1).jpeg" alt="Minyak Asmoro Asihan">
+        </div>
+        <br>
+
+        <div class="slider">
+          <div class="slides">
+              <div class="slide">
+                  <img src="img/gambar (2).jpeg" alt="Minyak Asmoro Asihan">
+              </div>
+              <div class="slide">
+                  <img src="img/gambar (3).jpeg" alt="Minyak Asmoro Asihan">
+              </div>
+          </div>
+      </div>
+      
+      
+        <div class="content">
+            <h2>Manfaat Minyak Asmoro Asihan</h2>
+            <p>
+              SANGAT AMPUH DI GUNAKAN untuk :
+            <br>  🍁- Percintaan (Kunci Hati, Kunci Nafsu)
+            <br>  🍁- Penglarisan (Usaha, Karir & Memudahkan Mendapatkan Pekerjaan)
+            <br>  🍁- Memberi Perlindungan dan ketenangan
+            <br>  🍁- Memberi Aura positif bagi pemakainya
+            <br>  🍁- membersihkan energi negatif disekitar kita
+            <br>  🍁- Memberikan Inspirasi & Kebahagiaan
+            <br>  🍁- Mengurangi rasa takut Cemas serta membangun kepercayaan diri
+            <br>  🍁- Magnet Rezeki & Keselamatan
+            <br>  🍁- Symbolis pembawa keberuntungan
+            <br>  🍁- Aura Kewibawaan & Memikat
+            <br>  🍁- Ikhtiar Pelunas Hutang
+            <br>
+            <br>  Bisa Untuk Semua Agama/Keyakinan
+Media Ikhtiar Tidak Untuk Disembah
+            </p>
+
+        </div>
+
+        <div class="cta">
+            <a href="https://wa.me/6285956469513" target="_blank">
+                <span>&#8594;</span> Jika Anda Benar-Benar Berminat, Klik WhatsApp di Bawah Ini
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Minyak Asmoro Asihan
+    </footer>
+</body>
+</html>
